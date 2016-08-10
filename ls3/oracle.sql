@@ -17,7 +17,7 @@ INCREMENT BY 1
 START WITH 1
 NOMAXVALUE;
 
--- Writting 1000 different products in the database --
+-- Writing 1000 different products in the database --
 DECLARE i NUMBER := 0; price_incr DECIMAL(15, 2) := 1590; BEGIN
   LOOP
     i := i + 1;
