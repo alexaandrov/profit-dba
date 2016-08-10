@@ -1,5 +1,5 @@
 -- Creating table for products --
-DROP TABLE IF EXISTS "product";
+DROP TABLE IF EXISTS product;
 CREATE TABLE product (
   id INTEGER,
   article VARCHAR(255) NOT NULL UNIQUE,
