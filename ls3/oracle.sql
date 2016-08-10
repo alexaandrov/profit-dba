@@ -42,7 +42,7 @@ DECLARE i NUMBER := 0; price_incr DECIMAL(15, 2) := 1590; BEGIN
   END LOOP;
 END;
 
--- Inserting the data to the databaset with 'TEST' word --
+-- Inserting the data to the database with 'TEST' word --
 INSERT INTO product
 (id, article, name, price, old_price, image, count)
 VALUES
