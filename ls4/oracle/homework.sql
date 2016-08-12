@@ -1,3 +1,22 @@
+-- Creating product table --
+CREATE TABLE product (
+  id INTEGER,
+  article VARCHAR(255) NOT NULL UNIQUE,
+  name VARCHAR(255) NOT NULL,
+  price DECIMAL(15, 2) NOT NULL CHECK(price > 0),
+  old_price DECIMAL(10, 2) DEFAULT NULL CHECK(old_price > 0),
+  image VARCHAR(255) DEFAULT NULL,
+  delivery_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  count INTEGER NOT NULL,
+  CONSTRAINT product_id_pk PRIMARY KEY (id)
+);
+
+-- Creating a sequence for products --
+CREATE SEQUENCE product_id_seq
+INCREMENT BY 1
+START WITH 1
+NOMAXVALUE;
+
 -- Creating additional tables for the product
 CREATE TABLE category (
   id INTEGER,
