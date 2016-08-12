@@ -1,1 +1,1 @@
-# SQL functions and operators
+# Functions and operators
