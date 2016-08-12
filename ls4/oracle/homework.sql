@@ -1,4 +1,4 @@
--- Creating product table --
+-- Creating product table
 CREATE TABLE product (
   id INTEGER,
   article VARCHAR(255) NOT NULL UNIQUE,
@@ -10,12 +10,6 @@ CREATE TABLE product (
   count INTEGER NOT NULL,
   CONSTRAINT product_id_pk PRIMARY KEY (id)
 );
-
--- Creating a sequence for products --
-CREATE SEQUENCE product_id_seq
-INCREMENT BY 1
-START WITH 1
-NOMAXVALUE;
 
 -- Creating additional tables for the product
 CREATE TABLE category (
@@ -30,12 +24,19 @@ CREATE TABLE brand (
   CONSTRAINT brand_id_pk PRIMARY KEY (id)
 );
 
--- Creating sequences
+-- Creating a sequence for products
+CREATE SEQUENCE product_id_seq
+INCREMENT BY 1
+START WITH 1
+NOMAXVALUE;
+
+-- Creating a sequence for categories
 CREATE SEQUENCE category_seq
 INCREMENT BY 1
 START WITH 1
 NOMAXVALUE;
 
+-- Creating a sequnce for brands
 CREATE SEQUENCE brand_seq
 INCREMENT BY 1
 START WITH 1
@@ -137,8 +138,8 @@ VALUES
   390922.34,
   'http://img.com/?id=921',
   3,
-  5,
-  4
+  4,
+  3
 );
 
 INSERT INTO product
@@ -151,8 +152,8 @@ VALUES
   390922.34,
   'http://img.com/?id=922',
   3,
-  5,
-  4
+  2,
+  3
 );
 
 -- Selecting all products with category and brands
