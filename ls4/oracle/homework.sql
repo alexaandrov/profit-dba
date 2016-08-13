@@ -25,7 +25,7 @@ CREATE TABLE brand (
 );
 
 -- Creating a sequence for products
-CREATE SEQUENCE product_id_seq
+CREATE SEQUENCE product_seq
 INCREMENT BY 1
 START WITH 1
 NOMAXVALUE;
