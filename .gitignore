@@ -1,0 +1,20 @@
+# JetBrains IDE
+.idea
+
+# Windows thumbnail cache
+Thumbs.db
+desktop.ini
+debug.log
+
+# Mac DS_Store Files
+*.DS_Store
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Todo
+*.todo
+
+# PHP
+.phpintel
