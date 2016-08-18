@@ -1,3 +1,10 @@
+-- DROP TABLE product;
+-- DROP TABLE category;
+-- DROP TABLE brand;
+-- DROP SEQUENCE product_seq;
+-- DROP SEQUENCE brand_seq;
+-- DROP SEQUENCE category_seq;
+
 -- Creating product table
 CREATE TABLE product (
   id INTEGER,
